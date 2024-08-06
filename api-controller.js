@@ -207,6 +207,8 @@ function fillFile(data){
 }
 
 /**
+ * status dos pedidos
+ *
  * {"data":[{"id":6,"nome":"Em aberto","idHerdado":0,"cor":"#E9DC40"},{"id":9,"nome":"Atendido","idHerdado":0,"cor":"#3FB57A"},{"id":12,"nome":"Cancelado","idHerdado":0,"cor":"#CBCBCB"},{"id":15,"nome":"Em andamento","idHerdado":0,"cor":"#0065F9"},{"id":18,"nome":"Venda Agenciada","idHerdado":0,"cor":"#FF7835"},{"id":21,"nome":"Em digita\u00e7\u00e3o","idHerdado":0,"cor":"#FF66E3"},{"id":24,"nome":"Verificado","idHerdado":0,"cor":"#85F39E"},{"id":69261,"nome":"Separa\u00e7\u00e3o","idHerdado":15,"cor":"#f58f00"},{"id":71998,"nome":"Full","idHerdado":9,"cor":"#ad1fe0"},{"id":78023,"nome":"Finalizado","idHerdado":9,"cor":"#000000"},{"id":88635,"nome":"Faturado","idHerdado":15,"cor":"#ff3838"},{"id":88679,"nome":"A Enviar","idHerdado":15,"cor":"#16bd00"}]}
  */
 

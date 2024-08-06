@@ -30,10 +30,12 @@ function doPost(e){
     
     Logger.log(e.parameter)
 
-    let action = e.parameter.hasOwnProperty('submitLogin')? 'login' : e.parameter.hasOwnProperty('submitRegister') ? 'register' : null;
+    let action = e.parameter.hasOwnProperty('submitRegister') ? 'register' : 'login';
 
     console.log(action);  
 
+  } else{
+    console
   }
 
   return loadPage('Index','');
