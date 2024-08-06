@@ -2,14 +2,14 @@
 
 //userData.setProperty('apiToken', null);
 
-//"access_token: '6fec31633f95c60ac10916f2693351998b112e0c',  expires_in: 21600,  token_type: 'Bearer',  scope: '98308 98309 98310 98313 98314 507943 182224097 220621674 318257556 318257570 363921590 363921592 363953167 791588404 1649295804',  refresh_token: 'da413f9c3fc16b490519ff549f6566d05be989c6'
+
 
 
 function getToken(code) {
 
   const urlBase = 'https://www.bling.com.br/Api/v3/oauth/token';
-  const clientId = '0312b2f7b97fe8cdbb1d76056f880cd201abf33b';
-  const clientSecret = '8c65b6a703a992eefa4d20c3c376b421f4d1e97a7d55cc5ecc7b3622fa21';
+  const clientId = '';
+  const clientSecret = '';
 
   const credentials64 = Utilities.base64Encode(`${clientId}:${clientSecret}`);
 
