@@ -1,0 +1,54 @@
+<script>
+
+  const menu = document.querySelector('#menu');
+  
+  var contentDiv = document.querySelector('#content');
+ 
+  const actionMap = {
+    'Ajuda': '',
+    'Entrar': 'form-login',
+    'Cadastrar': 'form-register',
+
+  }
+
+  menu.addEventListener('click',function(e){
+    
+    let active = document.querySelector('.nav-link.active');
+
+    if(e.target.classList.contains('nav-link') && e.target != active){
+
+      contentDiv.innerHTML = 'carregando...'
+
+      
+
+      let action = e.target.textContent;
+      
+      loadContent(actionMap[action]);
+
+      active.classList.toggle('active');
+      
+      e.target.classList.toggle('active');
+      
+    }
+  });
+
+  function loadContent(contentName){
+    
+    google.script.run.withSuccessHandler(function(html){
+
+      console.log(html);
+
+      contentDiv.innerHTML = html
+
+    }).loadPart(contentName);
+  }
+
+
+
+  contentDiv.addEventListener('click',function(e){
+    console.log(e.target.tagName);
+  })
+
+
+ 
+</script>
